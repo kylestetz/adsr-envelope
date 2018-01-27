@@ -118,7 +118,7 @@ function time(value) {
 }
 
 function level(value) {
-  return constrain(+value, 0, 1) || 0;
+  return value || 0;
 }
 
 function epsilon(value) {

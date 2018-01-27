@@ -131,10 +131,10 @@ describe("ADSREnvelope", () => {
       assert(env.sustainLevel === 0.25);
 
       env.sustainLevel = -10;
-      assert(env.sustainLevel === 0);
+      assert(env.sustainLevel === -10);
 
       env.sustainLevel = 10;
-      assert(env.sustainLevel === 1);
+      assert(env.sustainLevel === 10);
 
       env.sustainLevel = NaN;
       assert(env.sustainLevel === 0);
